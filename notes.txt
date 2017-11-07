@@ -1,0 +1,21 @@
+Einstein Platform - Image Classification API
+
+1. Register for Einstein account
+    - email
+    - download pem file
+
+2. Obtain JWT token via OAuth
+    POST to https://api.einstein.ai/v2/oauth2/token
+    header:
+        Content-Type application/x-www-form-urlencoded
+    body:
+        grant_type urn:ietf:params:oauth:grant-type:jwt-bearer
+        assertion eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJnQGduYS5saSIsImF1ZCI6Imh0dHBzOi8vYXBpLmVpbnN0ZWluLmFpL3YxL29hdXRoMi90b2tlbiIsImV4cCI6MTUwNjg0OTQ1OX0.W42mAomxuTNB5yb5kcSbssJnsUxQBqMnXAzQpmgeyX5UI6LFwcarnXyopm4PTK08nkEAlSQnezWUlR8EQnRnamdCzBxt3eMFVDCVC5jpCEnt4FwLalCu5IdQhjGXRKCgFatJqgEhL8kNiEfx0yL2VM4n00fQr_KFs_osox9b7byE5bsRsj-74zSVCBKYifDAN5oxXny0opP1ltksOHyynxnom1RGVqiY34NibTp0AXBgmIMLoG5AkIAc0j_Glm5sIac6VlHDMv1vBRPNGAnynCC1WuxzdLIOSqMh87u_dXuZFYW_dciZmTaOCu5SndODRfpdb2QfJ1GZ-ALNsfDdvw
+            - header
+            - payload
+            - secret
+
+3. Create dataset:
+
+1. create images in a zip file
+2. post to api
